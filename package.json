@@ -1,0 +1,22 @@
+{
+  "name": "touchbar-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+        "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahman95/touchbar-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahman95/touchbar-example/issues"
+  },
+  "homepage": "https://github.com/rahman95/touchbar-example#readme",
+  "devDependencies": {
+    "electron": "~1.6.2"
+  }
+}

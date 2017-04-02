@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-        "start": "electron ."
+        "start": "cd app && electron ."
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/rahman95/touchbar-example#readme",
   "devDependencies": {
-    "electron": "~1.6.2"
+    "electron": "^1.6.3"
   }
 }

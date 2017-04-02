@@ -34,7 +34,7 @@ const spin = new TouchBarButton({
 
     spinning = true
     result.label = ''
-
+    window.loadURL(`file://${path.join(__dirname, '/spin.html')}`)
     let timeout = 10
     const spinLength = 4 * 1000 // 4 seconds
     const startTime = Date.now()
@@ -74,33 +74,6 @@ const updateReels = () => {
 }
 
 const finishSpin = () => {
-  // const uniqueValues = new Set([
-  //    reel1.label,
-  //    reel2.label,
-  //    reel3.label,
-  //    reel4.label,
-  //    reel5.label,
-  //    reel6.label,
-  //    reel7.label,
-  //    reel8.label,
-  //    reel9.label,
-  //    reel10.label
-  //  ]).size
-  //
-  // if (uniqueValues === 1) {
-  //   // All 3 values are the same
-  //   result.label = 'Match'
-  //   result.textColor = '#FDFF00'
-  // } else if (uniqueValues === 2) {
-  //   // 2 values are the same
-  //   result.label = 'Winner'
-  //   result.textColor = '#FDFF00'
-  // } else {
-  //   // No values are the same
-  //   result.label = '🙁'
-  //   result.textColor = null
-  // }
-
    reel1.label = 'S';
    reel2.label = 'E';
    reel3.label = 'N';
@@ -114,7 +87,7 @@ const finishSpin = () => {
 
    spinning = false
 
-   result.label = '👀👀'
+   result.label = '😎😎'
    window.loadURL(`file://${path.join(__dirname, '/finish.html')}`)
 }
 
@@ -159,8 +132,8 @@ let window
 
 app.once('ready', () => {
   window = new BrowserWindow({
-    width: 200,
-    height: 200
+    width: 900,
+    height: 535
   })
   window.loadURL(`file://${path.join(__dirname, '/index.html')}`)
   window.setTouchBar(touchBar)
